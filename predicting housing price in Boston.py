@@ -9,7 +9,7 @@ import visuals as vs
 %matplotlib inline
 
 # Load the Boston housing dataset
-data = pd.read_csv(r'C:\Users\wsoo\Documents\GitHub\machine-learning\projects\1. boston_housing\housing.csv')
+data = pd.read_csv('housing.csv')
 prices = data['MEDV']
 features = data.drop('MEDV', axis = 1)
 X = data.iloc[:,0:-1]
